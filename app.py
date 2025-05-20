@@ -1,7 +1,7 @@
 import streamlit as st
 
 # Set your secret password here
-PASSWORD = "mysecret123"  # You can change this to any password you like
+PASSWORD = "HasaN@"  # You can change this to any password you like
 
 # Ask user for password
 password_input = st.text_input("Enter Access Password:", type="password")
