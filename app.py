@@ -1,4 +1,19 @@
 import streamlit as st
+
+# Set your secret password here
+PASSWORD = "mysecret123"  # You can change this to any password you like
+
+# Ask user for password
+password_input = st.text_input("Enter Access Password:", type="password")
+
+# Check if password is correct
+if password_input != PASSWORD:
+    st.warning("Incorrect password. Please try again.")
+    st.stop()  # Stops the app from loading further
+
+
+
+import streamlit as st
 import pandas as pd
 import gspread
 from google.oauth2.service_account import Credentials
