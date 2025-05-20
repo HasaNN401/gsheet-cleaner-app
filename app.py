@@ -1,22 +1,4 @@
 import streamlit as st
-
-# This must be the first Streamlit command
-st.set_page_config(page_title="Google Sheet Cleaner", layout="wide")
-
-# Your password logic
-PASSWORD = "HasaN@"
-password_input = st.text_input("Enter Access Password:", type="password")
-
-if password_input != PASSWORD:
-    st.warning("Incorrect password. Please try again.")
-    st.stop()
-
-# Rest of your app code here
-
-
-
-
-import streamlit as st
 import pandas as pd
 import gspread
 from google.oauth2.service_account import Credentials
