@@ -1,15 +1,13 @@
 import streamlit as st
+import pandas as pd
+import numpy as np
 
-# Set your secret password here
-PASSWORD = "HasaN@"  # You can change this to any password you like
-
-# Ask user for password
+PASSWORD = "HasaN@"
 password_input = st.text_input("Enter Access Password:", type="password")
 
-# Check if password is correct
 if password_input != PASSWORD:
     st.warning("Incorrect password. Please try again.")
-    st.stop()  # Stops the app from loading further
+    st.stop()
 
 
 
