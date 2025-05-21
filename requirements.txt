@@ -1,4 +1,1 @@
-pandas
-gspread
-google-auth
-
+streamlit 
