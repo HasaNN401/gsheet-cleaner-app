@@ -1,3 +1,15 @@
+with open("google-sheet-cleaner.zip", "rb") as f:
+    zip_data = f.read()
+
+st.download_button(
+    label="📦 Download Full Source Code (ZIP)",
+    data=zip_data,
+    file_name="google-sheet-cleaner.zip",
+    mime="application/zip"
+)
+
+
+
 import pandas as pd
 import gspread
 from google.oauth2.service_account import Credentials
