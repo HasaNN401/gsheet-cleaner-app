@@ -1,4 +1,3 @@
-
 with open("google-sheet-cleaner.zip", "rb") as f:
     zip_data = f.read()
 
